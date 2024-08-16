@@ -54,3 +54,8 @@ $RECYCLE.BIN/
 
 # Excel
 *.xlsx
+# logs
+*.log
+# data
+*.json
+*.pdf

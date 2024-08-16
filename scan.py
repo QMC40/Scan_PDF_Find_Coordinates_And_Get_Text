@@ -1,5 +1,5 @@
 """
-    File: Scan_Folder_Extract_Data.py
+    File: scan.py
     Author: Aaron Fortner
     Date: 08/14/2024
     Version: 1.0
@@ -52,7 +52,6 @@ from tkinter import filedialog
 from openpyxl.styles import Font, colors
 
 
-# TODO: convert to tkinter dialog?
 # TODO: loop until a folder is selected or cancel is clicked
 def open_folder_dialog(title, initialdir) -> str:
     """
@@ -77,7 +76,6 @@ def open_folder_dialog(title, initialdir) -> str:
     return selected_folder
 
 
-# TODO: convert to tkinter dialog?
 # TODO: loop until a file is selected or cancel is clicked
 def open_file_dialog(title, filetypes, initialdir) -> str:
     """
@@ -103,7 +101,7 @@ def open_file_dialog(title, filetypes, initialdir) -> str:
     return file_path
 
 
-# TODO: remove commented out code before production *******************************************************************
+# TODO: remove commented out code before production ********************************************************************
 def move_file(source_dir, dest_dir, file_name) -> None:
     """
     Moves a file from the 'source_dir' folder to the 'dest_dir' folder.
@@ -310,7 +308,11 @@ def extract_text_from_page(pdf_page, json_path) -> list:
 
     return extracted_data
 
-
+# TODO: make the hyperlink work in the spreadsheet, currently just adds the text to the cell
+# TODO: add error handling for missing fields in the JSON file
+# TODO: add error handling for missing fields in the PDF
+# TODO: add error handling for missing fields in the spreadsheet
+# TODO: make the columns in the spreadsheet dynamic based on the fields in the JSON file
 # TODO: uncomment before production ************************************************************************************
 def populate_spreadsheet(fields, pdf_name, sheet) -> None:
     """

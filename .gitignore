@@ -5,8 +5,9 @@ __pycache__/pdf_document.cpython-311.pyc
 __pycache__/Import_Document_To_Train.cpython-312.pyc
 /env
 
+
 # .gitignore
-.gitignore.txt
+.gitignore
 
 # Byte-compiled / optimized / DLL files
 __pycache__/
